@@ -18,11 +18,9 @@ def numberofIslands(matrix):
 
 	for row in range(0, len(matrix)):
 		for col in range(0, len(matrix[0])):
-			print(row, col)
 			if matrix[row][col] == 1:
 				islandCount += 1
 				matrix[row][col] = 0 
-				print(matrix)
 
 				queue = deque()
 				queue.append([row, col])
